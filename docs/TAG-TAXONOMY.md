@@ -63,6 +63,7 @@ Tags for domain-specific knowledge and practices.
 
 | Tag              | Description                              |
 |------------------|------------------------------------------|
+| `ui`             | UI/frontend conventions, code style      |
 | `architecture`   | Software architecture, design patterns   |
 | `security`       | Security best practices, vulnerability prevention |
 | `performance`    | Performance optimization, profiling      |

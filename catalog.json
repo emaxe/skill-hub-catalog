@@ -1,13 +1,41 @@
 {
   "version": 3,
-  "generated_at": "2026-03-29T08:29:27Z",
+  "generated_at": "2026-04-09T10:05:44Z",
   "counts": {
-    "skill": 3,
+    "skill": 14,
     "agent": 1,
     "command": 1,
-    "total": 5
+    "total": 16
   },
   "extensions": [
+    {
+      "type": "skill",
+      "name": "add-page-with-component",
+      "description": "Use when adding a new page with a base domain component to a Vue/Quasar UI app (Admin.UI, Company.UI, Widget.UI). Triggers: 'добавь страницу', 'создай страницу', 'новая страница с компонентом', 'add page'.",
+      "tags": ["ui","vue","workflow"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/add-page-with-component",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "type": "skill",
+      "name": "app-permissions",
+      "description": "Use when adding permission checks in Vue UI apps — route guards, button visibility, form read-only mode. Covers useAppPermissions, guardPermission, _CONST.permissions, and checkRoute patterns.",
+      "tags": ["ui","vue","security"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/app-permissions",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
     {
       "type": "skill",
       "name": "feature-accept",
@@ -19,7 +47,8 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-accept",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
     },
     {
       "type": "skill",
@@ -32,7 +61,8 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-planning",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
     },
     {
       "type": "skill",
@@ -45,7 +75,134 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/git-commit-and-push",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "move-component-to-shared",
+      "description": "Use when moving a Vue component from Admin.UI, Company.UI, or Widget.UI to Shared.UI for reuse. Covers inject/provide pattern for store and app-specific config (routes, permissions). Triggers: 'перенеси в Shared', 'вынеси в Shared.UI', 'сделай переиспользуемым'.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/move-component-to-shared",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "type": "skill",
+      "name": "repo-stores-workflow",
+      "description": "Use when creating or modifying Pinia repository stores (stores/repo) in Vue UI apps. Covers naming, adapters, repoHelper methods, query patterns, and project conventions for Admin.UI, Company.UI, Widget.UI.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/repo-stores-workflow",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["store-repo-api","ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "type": "skill",
+      "name": "store-repo-api",
+      "description": "Use when creating or editing Pinia repository stores for API interaction in Vue UI apps. Covers store file structure, adapters (useRefAdapter/useCollectionAdapter), repoHelper methods, getPath, and full store template.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/store-repo-api",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "type": "skill",
+      "name": "ui-code-style",
+      "description": "Use when the user needs a code style overview for Vue.js UI projects, asks about UI conventions, or wants a quick checklist for naming, components, imports, styles, and linting in Vue/Quasar projects.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-code-style",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-naming-conventions","ui-component-structure","ui-imports-aliases","ui-styles-css","ui-linting-formatting"],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "ui-component-structure",
+      "description": "Use when creating or editing Vue components — defines script setup block order, section separators, template DIALOGS pattern, and component roles (page/domain/block/dialog) in Vue/Quasar UI projects.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-component-structure",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "ui-imports-aliases",
+      "description": "Use when writing import statements in Vue UI projects — alias table (@shared, @rt/shared, @components, @stores, etc.), usage patterns, and import ordering rules for Vue/Quasar applications.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-imports-aliases",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "ui-linting-formatting",
+      "description": "Use when checking code after changes in Vue UI projects, configuring linters, fixing formatting errors, or writing UI text — covers ESLint, Prettier, TypeScript rules, and Russian language requirement for UI text.",
+      "tags": ["ui","vue","eslint"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-linting-formatting",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "ui-naming-conventions",
+      "description": "Use when creating or renaming Vue components, files, stores, constants, or variables in UI projects. Covers PascalCase components, store naming (use*Store/use*Repo), constant objects (_CONST/_sCONST), and variable prefixes.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-naming-conventions",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "ui-styles-css",
+      "description": "Use when writing or reviewing CSS/SCSS styles in Vue UI projects — BEM class naming, vars.scss variables, required // $ comment in style blocks, Quasar variable overrides.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-styles-css",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
     },
     {
       "type": "agent",
@@ -59,6 +216,7 @@
       "path": "agents/code-reviewer",
       "files": ["AGENT.md", "CURSOR.md"],
       "dependencies": [],
+      "projects": [],
       "model": "claude-sonnet-4-6",
       "color": "#FF6600"
     },
@@ -73,20 +231,51 @@
       "platforms": {"claude-code": "COMMAND.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "commands/deploy-check",
       "files": ["COMMAND.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
     }
   ],
   "tags_index": {
-    "architecture": ["agent:code-reviewer","skill:feature-planning"],
+    "architecture": ["agent:code-reviewer","skill:feature-planning","skill:move-component-to-shared","skill:repo-stores-workflow","skill:store-repo-api","skill:ui-code-style"],
     "ci-cd": ["command:deploy-check"],
+    "eslint": ["skill:ui-linting-formatting"],
     "git": ["skill:feature-accept","skill:git-commit-and-push"],
     "jira": ["skill:feature-planning"],
     "planning": ["skill:feature-accept","skill:feature-planning"],
     "safety": ["agent:code-reviewer","command:deploy-check","skill:git-commit-and-push"],
+    "security": ["skill:app-permissions"],
     "testing": ["command:deploy-check"],
-    "workflow": ["agent:code-reviewer","skill:feature-accept","skill:feature-planning","skill:git-commit-and-push"]
+    "ui": ["skill:add-page-with-component","skill:app-permissions","skill:move-component-to-shared","skill:repo-stores-workflow","skill:store-repo-api","skill:ui-code-style","skill:ui-component-structure","skill:ui-imports-aliases","skill:ui-linting-formatting","skill:ui-naming-conventions","skill:ui-styles-css"],
+    "vue": ["skill:add-page-with-component","skill:app-permissions","skill:move-component-to-shared","skill:repo-stores-workflow","skill:store-repo-api","skill:ui-code-style","skill:ui-component-structure","skill:ui-imports-aliases","skill:ui-linting-formatting","skill:ui-naming-conventions","skill:ui-styles-css"],
+    "workflow": ["agent:code-reviewer","skill:add-page-with-component","skill:feature-accept","skill:feature-planning","skill:git-commit-and-push"]
   },
   "skills": [
+    {
+      "name": "add-page-with-component",
+      "description": "Use when adding a new page with a base domain component to a Vue/Quasar UI app (Admin.UI, Company.UI, Widget.UI). Triggers: 'добавь страницу', 'создай страницу', 'новая страница с компонентом', 'add page'.",
+      "tags": ["ui","vue","workflow"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/add-page-with-component",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "name": "app-permissions",
+      "description": "Use when adding permission checks in Vue UI apps — route guards, button visibility, form read-only mode. Covers useAppPermissions, guardPermission, _CONST.permissions, and checkRoute patterns.",
+      "tags": ["ui","vue","security"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/app-permissions",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
     {
       "name": "feature-accept",
       "description": "Use when the user wants to accept/finish a completed feature, merge it, and clean up artifacts. Triggers: 'принять фичу', 'accept feature', 'feature done', 'закрыть фичу', 'завершить фичу', 'merge feature', 'фича готова'.",
@@ -97,7 +286,8 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-accept",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
     },
     {
       "name": "feature-planning",
@@ -109,7 +299,8 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-planning",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
     },
     {
       "name": "git-commit-and-push",
@@ -121,8 +312,126 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/git-commit-and-push",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": []
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "name": "move-component-to-shared",
+      "description": "Use when moving a Vue component from Admin.UI, Company.UI, or Widget.UI to Shared.UI for reuse. Covers inject/provide pattern for store and app-specific config (routes, permissions). Triggers: 'перенеси в Shared', 'вынеси в Shared.UI', 'сделай переиспользуемым'.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/move-component-to-shared",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "name": "repo-stores-workflow",
+      "description": "Use when creating or modifying Pinia repository stores (stores/repo) in Vue UI apps. Covers naming, adapters, repoHelper methods, query patterns, and project conventions for Admin.UI, Company.UI, Widget.UI.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/repo-stores-workflow",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["store-repo-api","ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "name": "store-repo-api",
+      "description": "Use when creating or editing Pinia repository stores for API interaction in Vue UI apps. Covers store file structure, adapters (useRefAdapter/useCollectionAdapter), repoHelper methods, getPath, and full store template.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/store-repo-api",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-code-style"],
+      "projects": ["kyc"]
+    },
+    {
+      "name": "ui-code-style",
+      "description": "Use when the user needs a code style overview for Vue.js UI projects, asks about UI conventions, or wants a quick checklist for naming, components, imports, styles, and linting in Vue/Quasar projects.",
+      "tags": ["ui","vue","architecture"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-code-style",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": ["ui-naming-conventions","ui-component-structure","ui-imports-aliases","ui-styles-css","ui-linting-formatting"],
+      "projects": []
+    },
+    {
+      "name": "ui-component-structure",
+      "description": "Use when creating or editing Vue components — defines script setup block order, section separators, template DIALOGS pattern, and component roles (page/domain/block/dialog) in Vue/Quasar UI projects.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-component-structure",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "name": "ui-imports-aliases",
+      "description": "Use when writing import statements in Vue UI projects — alias table (@shared, @rt/shared, @components, @stores, etc.), usage patterns, and import ordering rules for Vue/Quasar applications.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-imports-aliases",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "name": "ui-linting-formatting",
+      "description": "Use when checking code after changes in Vue UI projects, configuring linters, fixing formatting errors, or writing UI text — covers ESLint, Prettier, TypeScript rules, and Russian language requirement for UI text.",
+      "tags": ["ui","vue","eslint"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-linting-formatting",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "name": "ui-naming-conventions",
+      "description": "Use when creating or renaming Vue components, files, stores, constants, or variables in UI projects. Covers PascalCase components, store naming (use*Store/use*Repo), constant objects (_CONST/_sCONST), and variable prefixes.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-naming-conventions",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "name": "ui-styles-css",
+      "description": "Use when writing or reviewing CSS/SCSS styles in Vue UI projects — BEM class naming, vars.scss variables, required // $ comment in style blocks, Quasar variable overrides.",
+      "tags": ["ui","vue"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
+      "path": "skills/ui-styles-css",
+      "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
+      "dependencies": [],
+      "projects": []
     }
   ],
-  "skills_count": 3
+  "skills_count": 14
 }
