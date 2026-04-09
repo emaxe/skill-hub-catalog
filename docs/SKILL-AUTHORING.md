@@ -16,6 +16,7 @@ Every `SKILL.md` starts with YAML frontmatter between `---` delimiters. Here is 
 | `scope`        | string   | No       | `global`   | Where the skill applies. Values: `global`, `project`, `both`. |
 | `platforms`    | string[] | No       | --         | Supported platforms. Values: `claude-code`, `cursor`, `gemini`, `codex`. |
 | `dependencies` | string[] | No       | `[]`       | Other Skill-Hub extensions this depends on. Format: `type:name` (e.g., `skill:git-commit-and-push`, `agent:code-reviewer`). Without prefix, `skill` is assumed. |
+| `projects`     | string[] | No       | `[]`       | Project identifiers this extension is designed for. Empty = universal. See [Projects](#projects). |
 | `language`     | string   | No       | `any`      | Target programming language or `any` for language-agnostic skills. |
 
 Full JSON Schema: [schema/frontmatter.schema.json](../schema/frontmatter.schema.json)
@@ -79,6 +80,35 @@ dependencies: [skill:git-commit-and-push, agent:code-reviewer]
 Without a type prefix, `skill` is assumed (e.g., `git-commit-and-push` = `skill:git-commit-and-push`).
 
 When a user installs your skill, Skill-Hub will prompt to install any missing dependencies.
+
+## Projects
+
+The `projects` field binds an extension to specific projects. This enables project-specific extensions that are only visible and installable when the user's config has a matching `project` setting.
+
+- **Empty or absent** — universal extension, works with any project
+- **`projects: [my-app]`** — only shown when user's config has `project: "my-app"`
+- **`projects: [my-app, other-app]`** — shown for either project
+
+### How it works
+
+1. The user sets `project` in their config (`.skill-hub.json` or via `skill-hub config set project my-app`)
+2. The catalog is filtered: extensions with non-empty `projects` that don't include the user's project are hidden
+3. If a conflicting extension is already installed, a warning dialog is shown at startup
+
+### Example
+
+```yaml
+---
+name: my-api-helpers
+description: "API helpers specific to the my-app project"
+tags: [api, backend]
+projects: [my-app]
+scope: project
+platforms: [claude-code]
+---
+```
+
+Use `projects` sparingly — most extensions should be universal. Only use it for extensions tightly coupled to a specific project's codebase or conventions.
 
 ## Testing Locally
 

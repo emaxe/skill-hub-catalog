@@ -33,6 +33,8 @@ skill-hub install skill:git-commit
 
 Теги: [TAG-TAXONOMY.md](docs/TAG-TAXONOMY.md)
 
+Расширения могут быть привязаны к конкретным проектам через поле `projects` в frontmatter. Подробнее: [SKILL-AUTHORING.md](docs/SKILL-AUTHORING.md#projects)
+
 ## Генерация каталога
 
 ```bash

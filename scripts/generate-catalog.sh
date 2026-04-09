@@ -97,6 +97,7 @@ parse_extensions() {
 
     local name="" description="" tags="[]" author="" version="1.0.0"
     local scope="$default_scope" platforms='["claude-code"]' dependencies="[]"
+    local projects="[]"
     local model="" color=""
 
     while IFS= read -r line; do
@@ -121,6 +122,7 @@ parse_extensions() {
         scope)        scope="$stripped_val" ;;
         platforms)    platforms="$(yaml_array_to_json "$val")" ;;
         dependencies) dependencies="$(yaml_array_to_json "$val")" ;;
+        projects)     projects="$(yaml_array_to_json "$val")" ;;
         model)        model="$stripped_val" ;;
         color)        color="$stripped_val" ;;
       esac
@@ -186,7 +188,8 @@ parse_extensions() {
       \"platforms\": $platforms_json,
       \"path\": \"$ext_dir\",
       \"files\": $files_json,
-      \"dependencies\": $dependencies"
+      \"dependencies\": $dependencies,
+      \"projects\": $projects"
 
     # Add agent-specific fields
     if [ "$ext_type" = "agent" ]; then
@@ -223,7 +226,8 @@ parse_extensions() {
       \"platforms\": $platforms_json,
       \"path\": \"$ext_dir\",
       \"files\": $files_json,
-      \"dependencies\": $dependencies
+      \"dependencies\": $dependencies,
+      \"projects\": $projects
     }"
 
       local skill_idx=$((local_count - 1))

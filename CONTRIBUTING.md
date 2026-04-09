@@ -53,6 +53,7 @@ Edit the YAML frontmatter at the top of your `SKILL.md`. Required fields:
 | `scope`       | No       | `global`, `project`, or `both` (default: `global`) |
 | `platforms`   | No       | Target platforms: `claude-code`, `cursor`, `gemini`, `codex` |
 | `dependencies`| No       | Other extensions this depends on (format: `type:name`) |
+| `projects`    | No       | Project identifiers this extension is designed for (default: `[]` = universal) |
 | `language`    | No       | Target programming language (default: `any`)   |
 
 See [schema/frontmatter.schema.json](schema/frontmatter.schema.json) for the full validation schema.

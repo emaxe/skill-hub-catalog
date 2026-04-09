@@ -22,6 +22,7 @@
 | `scope`        | string   | Нет         | `global`    | Где агент может быть установлен: `global`, `project`, `both`. |
 | `platforms`    | string[] | Нет         | —           | Поддерживаемые платформы: `claude-code`, `cursor`, `gemini`, `codex`. |
 | `dependencies` | string[] | Нет         | `[]`        | Зависимости от других расширений (формат: `type:name`). |
+| `projects`     | string[] | Нет         | `[]`        | Идентификаторы проектов, для которых предназначено расширение. Пустое = универсальное. См. [Projects](#projects). |
 
 Полная JSON Schema: [schema/agent-frontmatter.schema.json](../schema/agent-frontmatter.schema.json)
 
@@ -95,6 +96,10 @@ dependencies: [skill:feature-planning, agent:code-reviewer]
 ```
 
 Без префикса типа зависимость считается скиллом.
+
+## Projects
+
+Поле `projects` позволяет привязать агента к конкретным проектам. Подробное описание и примеры: [SKILL-AUTHORING.md — Projects](SKILL-AUTHORING.md#projects).
 
 ## Тестирование
 

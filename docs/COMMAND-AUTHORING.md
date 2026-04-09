@@ -20,6 +20,7 @@
 | `scope`        | string   | Нет         | `project`   | Где команда может быть установлена: `project` или `both`. |
 | `platforms`    | string[] | Нет         | —           | Поддерживаемые платформы: `claude-code`, `cursor`, `gemini`, `codex`. |
 | `dependencies` | string[] | Нет         | `[]`        | Зависимости от других расширений (формат: `type:name`). |
+| `projects`     | string[] | Нет         | `[]`        | Идентификаторы проектов, для которых предназначено расширение. Пустое = универсальное. См. [Projects](#projects). |
 
 Полная JSON Schema: [schema/command-frontmatter.schema.json](../schema/command-frontmatter.schema.json)
 
@@ -93,6 +94,10 @@ dependencies: [skill:git-commit-and-push]
 ```
 
 Без префикса типа зависимость считается скиллом.
+
+## Projects
+
+Поле `projects` позволяет привязать команду к конкретным проектам. Подробное описание и примеры: [SKILL-AUTHORING.md — Projects](SKILL-AUTHORING.md#projects).
 
 ## Тестирование
 

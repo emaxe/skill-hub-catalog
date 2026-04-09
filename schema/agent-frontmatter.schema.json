@@ -62,6 +62,14 @@
       "items": {
         "type": "string"
       }
+    },
+    "projects": {
+      "type": "array",
+      "description": "Project identifiers this extension is designed for. Empty or absent means the extension is universal (works with any project). When a project is set in the user's config, extensions with a non-matching projects list are hidden from search and flagged as conflicting if installed.",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
     }
   }
 }
