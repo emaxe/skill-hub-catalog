@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2026-04-09T10:05:44Z",
+  "generated_at": "2026-04-09T10:24:56Z",
   "counts": {
     "skill": 14,
     "agent": 1,
@@ -19,8 +19,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/add-page-with-component",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "type": "skill",
@@ -33,8 +32,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/app-permissions",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "type": "skill",
@@ -47,8 +45,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-accept",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -61,8 +58,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-planning",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -75,8 +71,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/git-commit-and-push",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -89,8 +84,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/move-component-to-shared",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "type": "skill",
@@ -103,8 +97,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/repo-stores-workflow",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["store-repo-api","ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["store-repo-api","ui-code-style"]
     },
     {
       "type": "skill",
@@ -117,8 +110,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/store-repo-api",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "type": "skill",
@@ -131,8 +123,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-code-style",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-naming-conventions","ui-component-structure","ui-imports-aliases","ui-styles-css","ui-linting-formatting"],
-      "projects": []
+      "dependencies": ["ui-naming-conventions","ui-component-structure","ui-imports-aliases","ui-styles-css","ui-linting-formatting"]
     },
     {
       "type": "skill",
@@ -145,8 +136,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-component-structure",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -159,8 +149,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-imports-aliases",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -173,8 +162,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-linting-formatting",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -187,8 +175,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-naming-conventions",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "skill",
@@ -201,8 +188,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-styles-css",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "type": "agent",
@@ -216,7 +202,6 @@
       "path": "agents/code-reviewer",
       "files": ["AGENT.md", "CURSOR.md"],
       "dependencies": [],
-      "projects": [],
       "model": "claude-sonnet-4-6",
       "color": "#FF6600"
     },
@@ -231,8 +216,7 @@
       "platforms": {"claude-code": "COMMAND.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "commands/deploy-check",
       "files": ["COMMAND.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     }
   ],
   "tags_index": {
@@ -260,8 +244,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/add-page-with-component",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "name": "app-permissions",
@@ -273,8 +256,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/app-permissions",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "name": "feature-accept",
@@ -286,8 +268,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-accept",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "feature-planning",
@@ -299,8 +280,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/feature-planning",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "git-commit-and-push",
@@ -312,8 +292,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": null},
       "path": "skills/git-commit-and-push",
       "files": ["SKILL.md", "CURSOR.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "move-component-to-shared",
@@ -325,8 +304,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/move-component-to-shared",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "name": "repo-stores-workflow",
@@ -338,8 +316,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/repo-stores-workflow",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["store-repo-api","ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["store-repo-api","ui-code-style"]
     },
     {
       "name": "store-repo-api",
@@ -351,8 +328,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/store-repo-api",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-code-style"],
-      "projects": ["kyc"]
+      "dependencies": ["ui-code-style"]
     },
     {
       "name": "ui-code-style",
@@ -364,8 +340,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-code-style",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": ["ui-naming-conventions","ui-component-structure","ui-imports-aliases","ui-styles-css","ui-linting-formatting"],
-      "projects": []
+      "dependencies": ["ui-naming-conventions","ui-component-structure","ui-imports-aliases","ui-styles-css","ui-linting-formatting"]
     },
     {
       "name": "ui-component-structure",
@@ -377,8 +352,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-component-structure",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "ui-imports-aliases",
@@ -390,8 +364,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-imports-aliases",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "ui-linting-formatting",
@@ -403,8 +376,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-linting-formatting",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "ui-naming-conventions",
@@ -416,8 +388,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-naming-conventions",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     },
     {
       "name": "ui-styles-css",
@@ -429,8 +400,7 @@
       "platforms": {"claude-code": "SKILL.md", "cursor": "CURSOR.md", "copilot": "COPILOT.md"},
       "path": "skills/ui-styles-css",
       "files": ["SKILL.md", "CURSOR.md", "COPILOT.md"],
-      "dependencies": [],
-      "projects": []
+      "dependencies": []
     }
   ],
   "skills_count": 14
