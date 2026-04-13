@@ -157,24 +157,26 @@ parse_extensions() {
       primary_file="SKILL.md"
     fi
 
-    # Check for agent-specific files
-    local cursor_file="null"
-    local copilot_file="null"
-    local files_list="\"$primary_file\""
+    local files_json="[\"$primary_file\"]"
 
-    if [ -f "$ext_dir/CURSOR.md" ]; then
-      cursor_file="\"CURSOR.md\""
-      files_list="$files_list, \"CURSOR.md\""
-    fi
-    if [ -f "$ext_dir/COPILOT.md" ]; then
-      copilot_file="\"COPILOT.md\""
-      files_list="$files_list, \"COPILOT.md\""
-    fi
-
-    local files_json="[$files_list]"
-
-    # Build platforms as object
-    local platforms_json="{\"claude-code\": \"$primary_file\", \"cursor\": $cursor_file, \"copilot\": $copilot_file}"
+    # Build platforms object from frontmatter platforms array
+    # All supported platforms point to the same primary file
+    local platforms_json="{"
+    local first_plat=true
+    # Parse platforms array items
+    local plat_items
+    plat_items="$(echo "$platforms" | sed 's/^\[//;s/\]$//;s/","/ /g;s/"//g')"
+    for plat in $plat_items; do
+      plat="$(echo "$plat" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
+      [ -z "$plat" ] && continue
+      if [ "$first_plat" = true ]; then
+        first_plat=false
+      else
+        platforms_json+=", "
+      fi
+      platforms_json+="\"$plat\": \"$primary_file\""
+    done
+    platforms_json+="}"
 
     # Build JSON entry for extensions array
     local entry="    {
