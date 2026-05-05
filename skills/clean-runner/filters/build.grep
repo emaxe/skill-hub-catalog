@@ -1,0 +1,18 @@
+^webpack [0-9]
+^\[webpack\].*progress
+^asset [a-f0-9]\{8,\}
+^[[:space:]]*\[built\]
+DeprecationWarning
+ExperimentalWarning
+^Browserslist: caniuse
+source map
+sourceMappingURL
+^[[:space:]]*modules by path
+^[[:space:]]*orphan modules
+^runtime modules
+^cacheable modules
+^[[:space:]]*\./node_modules/
+^✨  Done in
+^ℹ ｢wds｣
+^ℹ ｢wdm｣
+^⚡ esbuild
