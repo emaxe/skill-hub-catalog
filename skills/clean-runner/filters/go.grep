@@ -1,0 +1,7 @@
+^go: downloading
+^go: extracting
+^go: finding
+^go: verifying
+^go: all modules verified
+^go: downloading.*checksum
+^[[:space:]]*h1:[A-Za-z0-9+/=]

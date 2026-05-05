@@ -1,0 +1,7 @@
+{
+  "defaultTail": 0,
+  "defaultProfile": "",
+  "stripAnsi": true,
+  "collapseBlankLines": true,
+  "exitCodeInOutput": true
+}

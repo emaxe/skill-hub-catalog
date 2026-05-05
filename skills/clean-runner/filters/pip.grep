@@ -1,0 +1,13 @@
+^Downloading
+^[[:space:]]*━━
+^[[:space:]]*Using cached
+^Collecting
+^[[:space:]]*Downloading .* (
+^Building wheel
+^[[:space:]]*Running setup.py
+^Installing collected packages
+^Requirement already satisfied
+^WARNING: pip is configured with locations
+^WARNING: You are using pip version
+^\[notice\] A new release of pip
+^  Using legacy 'setup.py install'
