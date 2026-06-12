@@ -1,0 +1,177 @@
+{
+  "version": 3,
+  "installations": [
+    {
+      "type": "skill",
+      "name": "n8n-workflow",
+      "version": "e00a637588d3f28fbc0e91cdcb3725ead6c852dba6a05293e014935dd958f8e5",
+      "agent": "codex",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_JS/skillHub/.codex/AGENTS.md",
+      "source": "skillssh:claude-office-skills/skills@n8n-workflow",
+      "installed_at": "2026-05-28T13:29:32.861Z"
+    },
+    {
+      "type": "skill",
+      "name": "webapp-testing",
+      "version": "cfb23ef0c399c36e9247142a7ab5ac0e03c03e1c9f047b0f7502232a2c50b564",
+      "agent": "codex",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_JS/skillHub/.codex/AGENTS.md",
+      "source": "skillssh:anthropics/skills@webapp-testing",
+      "installed_at": "2026-05-30T14:39:18.437Z"
+    },
+    {
+      "type": "skill",
+      "name": "anti-spoofing",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/anti-spoofing/SKILL.md",
+      "projects": [
+        "liveness"
+      ],
+      "tags": [
+        "security",
+        "architecture",
+        "dotnet"
+      ],
+      "installed_at": "2026-06-05T06:27:36.008Z"
+    },
+    {
+      "type": "skill",
+      "name": "csharp-api",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/csharp-api/SKILL.md",
+      "projects": [
+        "liveness"
+      ],
+      "tags": [
+        "dotnet",
+        "architecture"
+      ],
+      "installed_at": "2026-06-05T06:27:36.047Z"
+    },
+    {
+      "type": "skill",
+      "name": "csharp-conventions",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/csharp-conventions/SKILL.md",
+      "projects": [
+        "liveness"
+      ],
+      "tags": [
+        "dotnet",
+        "architecture"
+      ],
+      "installed_at": "2026-06-05T06:27:36.080Z"
+    },
+    {
+      "type": "skill",
+      "name": "docs-update",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/docs-update/SKILL.md",
+      "projects": [
+        "liveness"
+      ],
+      "tags": [
+        "documentation",
+        "workflow"
+      ],
+      "installed_at": "2026-06-05T06:27:36.113Z"
+    },
+    {
+      "type": "skill",
+      "name": "ef-core",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/ef-core/SKILL.md",
+      "projects": [
+        "liveness"
+      ],
+      "tags": [
+        "dotnet",
+        "architecture"
+      ],
+      "installed_at": "2026-06-05T06:27:36.146Z"
+    },
+    {
+      "type": "skill",
+      "name": "feature-accept",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/feature-accept/SKILL.md",
+      "tags": [
+        "planning",
+        "workflow",
+        "git"
+      ],
+      "installed_at": "2026-06-05T06:27:36.177Z"
+    },
+    {
+      "type": "skill",
+      "name": "feature-planning",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/feature-planning/SKILL.md",
+      "tags": [
+        "planning",
+        "workflow",
+        "architecture",
+        "jira"
+      ],
+      "installed_at": "2026-06-05T06:27:36.211Z"
+    },
+    {
+      "type": "skill",
+      "name": "file-storage",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/file-storage/SKILL.md",
+      "projects": [
+        "liveness"
+      ],
+      "tags": [
+        "dotnet",
+        "architecture"
+      ],
+      "installed_at": "2026-06-05T06:27:36.246Z"
+    },
+    {
+      "type": "skill",
+      "name": "writing-rules",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/writing-rules/SKILL.md",
+      "tags": [
+        "documentation",
+        "workflow"
+      ],
+      "installed_at": "2026-06-05T06:27:36.279Z"
+    },
+    {
+      "type": "skill",
+      "name": "writing-skills",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/Kyc.Liveness/.agents/skills/writing-skills/SKILL.md",
+      "tags": [
+        "documentation",
+        "workflow"
+      ],
+      "installed_at": "2026-06-05T06:27:44.467Z"
+    }
+  ]
+}
