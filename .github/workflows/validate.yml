@@ -159,7 +159,7 @@ jobs:
           done <<< "$FILES"
 
           # Print warnings (non-blocking)
-          if [ ${#WARNINGS[@]} -gt 0 ]; then
+          if ((${#WARNINGS[@]:-0} > 0)); then
             echo ""
             echo "=== WARNINGS ==="
             for w in "${WARNINGS[@]}"; do
@@ -168,7 +168,7 @@ jobs:
           fi
 
           # Print errors and fail if any
-          if [ ${#ERRORS[@]} -gt 0 ]; then
+          if ((${#ERRORS[@]:-0} > 0)); then
             echo ""
             echo "=== ERRORS ==="
             for e in "${ERRORS[@]}"; do
