@@ -1,11 +1,11 @@
 {
   "version": 3,
-  "generated_at": "2026-05-05T12:21:46Z",
+  "generated_at": "2026-07-01T06:44:23Z",
   "counts": {
-    "skill": 15,
+    "skill": 17,
     "agent": 1,
     "command": 1,
-    "total": 17
+    "total": 19
   },
   "extensions": [
     {
@@ -35,6 +35,34 @@
       "files": ["SKILL.md"],
       "dependencies": ["ui-code-style"],
       "projects": ["kyc"]
+    },
+    {
+      "type": "skill",
+      "name": "awa",
+      "description": "Use when the user invokes /awa, when a request is ambiguous, or before starting non-trivial work that requires clarification. Triggers: 'awa', 'awareness', 'проверь понимание', 'что ты понял', ambiguous requirements, unclear scope.",
+      "tags": ["awareness","communication","clarification"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "project",
+      "platforms": {"claude-code": "SKILL.md"},
+      "path": "skills/awa",
+      "files": ["SKILL.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "type": "skill",
+      "name": "bro",
+      "description": "Multi-agent coding system. Orchestrator manages task execution flow by dispatching specialized agent roles (analyst, architect, critic, developer, reviewer, code-reviewer, tester). All role instructions and task tracker templates live inside this skill folder.",
+      "tags": [],
+      "author": "",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md"},
+      "path": "skills/bro",
+      "files": ["SKILL.md"],
+      "dependencies": [],
+      "projects": []
     },
     {
       "type": "skill",
@@ -251,7 +279,10 @@
   ],
   "tags_index": {
     "architecture": ["agent:code-reviewer","skill:feature-planning","skill:move-component-to-shared","skill:repo-stores-workflow","skill:store-repo-api","skill:ui-code-style"],
+    "awareness": ["skill:awa"],
     "ci-cd": ["command:deploy-check"],
+    "clarification": ["skill:awa"],
+    "communication": ["skill:awa"],
     "eslint": ["skill:ui-linting-formatting"],
     "filter": ["skill:clean-runner"],
     "git": ["skill:feature-accept","skill:git-commit-and-push"],
@@ -293,6 +324,32 @@
       "files": ["SKILL.md"],
       "dependencies": ["ui-code-style"],
       "projects": ["kyc"]
+    },
+    {
+      "name": "awa",
+      "description": "Use when the user invokes /awa, when a request is ambiguous, or before starting non-trivial work that requires clarification. Triggers: 'awa', 'awareness', 'проверь понимание', 'что ты понял', ambiguous requirements, unclear scope.",
+      "tags": ["awareness","communication","clarification"],
+      "author": "maksimklisin",
+      "version": "1.0.0",
+      "scope": "project",
+      "platforms": {"claude-code": "SKILL.md"},
+      "path": "skills/awa",
+      "files": ["SKILL.md"],
+      "dependencies": [],
+      "projects": []
+    },
+    {
+      "name": "bro",
+      "description": "Multi-agent coding system. Orchestrator manages task execution flow by dispatching specialized agent roles (analyst, architect, critic, developer, reviewer, code-reviewer, tester). All role instructions and task tracker templates live inside this skill folder.",
+      "tags": [],
+      "author": "",
+      "version": "1.0.0",
+      "scope": "global",
+      "platforms": {"claude-code": "SKILL.md"},
+      "path": "skills/bro",
+      "files": ["SKILL.md"],
+      "dependencies": [],
+      "projects": []
     },
     {
       "name": "clean-runner",
@@ -464,5 +521,5 @@
       "projects": []
     }
   ],
-  "skills_count": 15
+  "skills_count": 17
 }
