@@ -1,6 +1,6 @@
 # Skill-Hub Catalog
 
-Каталог расширений для [Skill-Hub](https://github.com/emaxe/skill-hub) — менеджера расширений для AI-ассистентов (Claude Code, Cursor, Copilot).
+Каталог расширений для [Skill-Hub](https://github.com/emaxe/skill-hub) — менеджера расширений для AI-ассистентов (Claude Code, Cursor, Copilot, Codex).
 
 ## Структура
 
