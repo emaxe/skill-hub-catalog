@@ -29,6 +29,7 @@ Tags for programming language-specific skills.
 | `go`         | Go                   |
 | `rust`       | Rust                 |
 | `java`       | Java                 |
+| `dotnet`     | .NET / C#            |
 
 ## Framework
 

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "f-r-g/accounts/fireworks/models/glm-5p2",
+  "provider": {
+    "f-r-g": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "F-R-G",
+      "options": {
+        "apiKey": "14104fc89a2f724dd8d17024508f20774637556f575e163a34e16e5674701c3e",
+        "baseURL": "http://188.132.197.214:9700/v1"
+      },
+      "models": {
+        "accounts/fireworks/models/glm-5p2": {
+          "name": "accounts/fireworks/models/glm-5p2",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

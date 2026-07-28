@@ -157,7 +157,18 @@ parse_extensions() {
       primary_file="SKILL.md"
     fi
 
-    local files_json="[\"$primary_file\"]"
+    local files_json="[\"$primary_file\""
+    # Scan directory for additional files (scripts, templates, configs)
+    local ext_dir_path
+    ext_dir_path="$(dirname "$ext_file")"
+    while IFS= read -r -d '' additional; do
+      local rel_path="${additional#"$ext_dir_path"/}"
+      # Skip primary file, .skillignore, hidden files
+      [ "$rel_path" = "$primary_file" ] && continue
+      [[ "$rel_path" == .* ]] && continue
+      files_json+=", \"$(json_escape "$rel_path")\""
+    done < <(find "$ext_dir_path" -type f -not -name '.*' -print0 | sort -z)
+    files_json+="]"
 
     # Build platforms object from frontmatter platforms array
     # All supported platforms point to the same primary file

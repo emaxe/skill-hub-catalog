@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "installations": [
+    {
+      "type": "skill",
+      "name": "feature-accept",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/feature-accept/SKILL.md",
+      "tags": [
+        "planning",
+        "workflow",
+        "git"
+      ],
+      "installed_at": "2026-06-25T12:17:26.002Z"
+    },
+    {
+      "type": "skill",
+      "name": "feature-planning",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/feature-planning/SKILL.md",
+      "tags": [
+        "planning",
+        "workflow",
+        "architecture",
+        "jira"
+      ],
+      "installed_at": "2026-06-25T12:17:26.145Z"
+    },
+    {
+      "type": "skill",
+      "name": "ui-code-style",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/ui-code-style/SKILL.md",
+      "tags": [
+        "ui",
+        "vue",
+        "architecture"
+      ],
+      "installed_at": "2026-06-25T12:17:26.325Z"
+    },
+    {
+      "type": "skill",
+      "name": "ui-component-structure",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/ui-component-structure/SKILL.md",
+      "tags": [
+        "ui",
+        "vue"
+      ],
+      "installed_at": "2026-06-25T12:17:26.530Z"
+    },
+    {
+      "type": "skill",
+      "name": "ui-imports-aliases",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/ui-imports-aliases/SKILL.md",
+      "tags": [
+        "ui",
+        "vue"
+      ],
+      "installed_at": "2026-06-25T12:17:26.849Z"
+    },
+    {
+      "type": "skill",
+      "name": "ui-linting-formatting",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/ui-linting-formatting/SKILL.md",
+      "tags": [
+        "ui",
+        "vue",
+        "eslint"
+      ],
+      "installed_at": "2026-06-25T12:17:27.018Z"
+    },
+    {
+      "type": "skill",
+      "name": "ui-naming-conventions",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/ui-naming-conventions/SKILL.md",
+      "tags": [
+        "ui",
+        "vue"
+      ],
+      "installed_at": "2026-06-25T12:17:27.153Z"
+    },
+    {
+      "type": "skill",
+      "name": "ui-styles-css",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/ui-styles-css/SKILL.md",
+      "tags": [
+        "ui",
+        "vue"
+      ],
+      "installed_at": "2026-06-25T12:17:27.227Z"
+    },
+    {
+      "type": "skill",
+      "name": "do-review",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/do-review/SKILL.md",
+      "tags": [
+        "review"
+      ],
+      "installed_at": "2026-06-25T12:17:27.332Z"
+    },
+    {
+      "type": "skill",
+      "name": "task-approach",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/task-approach/SKILL.md",
+      "tags": [
+        "workflow"
+      ],
+      "installed_at": "2026-06-25T12:17:27.487Z"
+    },
+    {
+      "type": "skill",
+      "name": "task-delegate",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/task-delegate/SKILL.md",
+      "tags": [
+        "workflow",
+        "planning"
+      ],
+      "installed_at": "2026-06-25T12:17:27.690Z"
+    },
+    {
+      "type": "skill",
+      "name": "task-worker-next",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/task-worker-next/SKILL.md",
+      "tags": [
+        "workflow"
+      ],
+      "installed_at": "2026-06-25T12:17:27.825Z"
+    },
+    {
+      "type": "skill",
+      "name": "update-rules",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/update-rules/SKILL.md",
+      "tags": [
+        "workflow"
+      ],
+      "installed_at": "2026-06-25T12:17:27.903Z"
+    },
+    {
+      "type": "skill",
+      "name": "bro",
+      "version": "1.0.0",
+      "agent": "agents-conventions",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/datafiller/.agents/skills/bro/SKILL.md",
+      "installed_at": "2026-06-25T12:17:46.452Z"
+    },
+    {
+      "type": "skill",
+      "name": "bro",
+      "version": "1.0.0",
+      "agent": "claude-code",
+      "scope": "project",
+      "path": "/Users/maksimklisin/Desktop/_CS/ozonApi/.claude/skills/bro/SKILL.md",
+      "installed_at": "2026-06-28T08:52:05.006Z"
+    }
+  ]
+}
