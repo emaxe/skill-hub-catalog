@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2026-07-28T07:11:25Z",
+  "generated_at": "2026-07-28T07:13:22Z",
   "counts": {
     "skill": 21,
     "agent": 1,
@@ -32,7 +32,7 @@
       "scope": "global",
       "platforms": {"claude-code": "SKILL.md"},
       "path": "skills/bro",
-      "files": ["SKILL.md", "adapters/claude.md", "adapters/codex.md", "adapters/copilot.md", "adapters/generic.md", "adapters/kimi.md", "AGENTS.md", "analyst.md", "architect.md", "CHANGELOG.md", "code-reviewer.md", "critic.md", "developer.md", "examples/new-feature/analyst-result.md", "examples/new-feature/code-reviewer-result.md", "examples/new-feature/developer-result.md", "examples/new-feature/task-tracker.md", "examples/new-feature/task.md", "examples/new-feature/tester-result.md", "examples/simple-bug-fix/code-reviewer-result.md", "examples/simple-bug-fix/developer-result.md", "examples/simple-bug-fix/task-tracker.md", "examples/simple-bug-fix/task.md", "examples/simple-bug-fix/tester-result.md", "MODELS.md", "orchestrator.md", "reviewer.md", "scripts/bro-mcp-server/__tests__/index.test.js", "scripts/bro-mcp-server/index.js", "scripts/bro-mcp-server/package.json", "scripts/generic-orchestrator-template.py", "scripts/test_generic_orchestrator.py", "skills-hub-integrator.md", "task-tracker.md", "tester.md", "tests/pytest.ini", "tests/test_generic_orchestrator.py", "tests/test_structure.py"],
+      "files": ["SKILL.md", "AGENTS.md", "CHANGELOG.md", "MODELS.md", "adapters/claude.md", "adapters/codex.md", "adapters/copilot.md", "adapters/generic.md", "adapters/kimi.md", "analyst.md", "architect.md", "code-reviewer.md", "critic.md", "developer.md", "examples/new-feature/analyst-result.md", "examples/new-feature/code-reviewer-result.md", "examples/new-feature/developer-result.md", "examples/new-feature/task-tracker.md", "examples/new-feature/task.md", "examples/new-feature/tester-result.md", "examples/simple-bug-fix/code-reviewer-result.md", "examples/simple-bug-fix/developer-result.md", "examples/simple-bug-fix/task-tracker.md", "examples/simple-bug-fix/task.md", "examples/simple-bug-fix/tester-result.md", "orchestrator.md", "reviewer.md", "scripts/bro-mcp-server/__tests__/index.test.js", "scripts/bro-mcp-server/index.js", "scripts/bro-mcp-server/package.json", "scripts/generic-orchestrator-template.py", "scripts/test_generic_orchestrator.py", "skills-hub-integrator.md", "task-tracker.md", "tester.md", "tests/pytest.ini", "tests/test_generic_orchestrator.py", "tests/test_structure.py"],
       "dependencies": [],
       "projects": []
     },
@@ -403,7 +403,7 @@
       "scope": "global",
       "platforms": {"claude-code": "SKILL.md"},
       "path": "skills/bro",
-      "files": ["SKILL.md", "adapters/claude.md", "adapters/codex.md", "adapters/copilot.md", "adapters/generic.md", "adapters/kimi.md", "AGENTS.md", "analyst.md", "architect.md", "CHANGELOG.md", "code-reviewer.md", "critic.md", "developer.md", "examples/new-feature/analyst-result.md", "examples/new-feature/code-reviewer-result.md", "examples/new-feature/developer-result.md", "examples/new-feature/task-tracker.md", "examples/new-feature/task.md", "examples/new-feature/tester-result.md", "examples/simple-bug-fix/code-reviewer-result.md", "examples/simple-bug-fix/developer-result.md", "examples/simple-bug-fix/task-tracker.md", "examples/simple-bug-fix/task.md", "examples/simple-bug-fix/tester-result.md", "MODELS.md", "orchestrator.md", "reviewer.md", "scripts/bro-mcp-server/__tests__/index.test.js", "scripts/bro-mcp-server/index.js", "scripts/bro-mcp-server/package.json", "scripts/generic-orchestrator-template.py", "scripts/test_generic_orchestrator.py", "skills-hub-integrator.md", "task-tracker.md", "tester.md", "tests/pytest.ini", "tests/test_generic_orchestrator.py", "tests/test_structure.py"],
+      "files": ["SKILL.md", "AGENTS.md", "CHANGELOG.md", "MODELS.md", "adapters/claude.md", "adapters/codex.md", "adapters/copilot.md", "adapters/generic.md", "adapters/kimi.md", "analyst.md", "architect.md", "code-reviewer.md", "critic.md", "developer.md", "examples/new-feature/analyst-result.md", "examples/new-feature/code-reviewer-result.md", "examples/new-feature/developer-result.md", "examples/new-feature/task-tracker.md", "examples/new-feature/task.md", "examples/new-feature/tester-result.md", "examples/simple-bug-fix/code-reviewer-result.md", "examples/simple-bug-fix/developer-result.md", "examples/simple-bug-fix/task-tracker.md", "examples/simple-bug-fix/task.md", "examples/simple-bug-fix/tester-result.md", "orchestrator.md", "reviewer.md", "scripts/bro-mcp-server/__tests__/index.test.js", "scripts/bro-mcp-server/index.js", "scripts/bro-mcp-server/package.json", "scripts/generic-orchestrator-template.py", "scripts/test_generic_orchestrator.py", "skills-hub-integrator.md", "task-tracker.md", "tester.md", "tests/pytest.ini", "tests/test_generic_orchestrator.py", "tests/test_structure.py"],
       "dependencies": [],
       "projects": []
     },
